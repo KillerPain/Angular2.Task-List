@@ -1,0 +1,17 @@
+@import '~@angular/material/core/theming/all-theme';
+
+@include mat-core();
+
+
+$task-list-primary: mat-palette($mat-blue, 400);
+$task-list-accent: mat-palette($mat-pink, A200, A100, A400);
+$task-list-warn: mat-palette($mat-red);
+
+$task-list-theme: mat-light-theme($task-list-primary, $task-list-accent, $task-list-warn);
+
+@include angular-material-theme($task-list-theme);
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
